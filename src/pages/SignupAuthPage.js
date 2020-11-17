@@ -13,7 +13,7 @@ export default function SignupAuthPage() {
 
     useEffect(()=>{
         setLoading(true)
-         fetch(`http://localhost:5000/user/auth/${email}`,{
+         fetch(`https://login-assignment-react.herokuapp.com/user/auth/${email}`,{
              method:"PUT",
              headers:{
                  "Content-Type":"application/json"

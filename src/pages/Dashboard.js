@@ -20,7 +20,7 @@ const [message,setMessage]=useState('');
     const handleShrinkClick= async()=>{
       
       var bodydata={longURL:url}
-      var req=await fetch(`http://localhost:5000/insertUrl/${user}`,{
+      var req=await fetch(`https://login-assignment-react.herokuapp.com/insertUrl/${user}`,{
         method:"POST",
         body:JSON.stringify(bodydata),
         headers:{
@@ -29,7 +29,7 @@ const [message,setMessage]=useState('');
       })
       var resdata=await req.json();
     if(resdata){
-       fetch(`http://localhost:5000/getUrl/${user}`).then(req=>req.json()).then(data=>{
+       fetch(`https://login-assignment-react.herokuapp.com/getUrl/${user}`).then(req=>req.json()).then(data=>{
          setData(data)
         }) 
        
@@ -41,7 +41,7 @@ const [message,setMessage]=useState('');
 
     useEffect(()=>{
       
-      fetch(`http://localhost:5000/getUrl/${user}`).then(res=>res.json()).then(data=>{setData(data)})
+      fetch(`https://login-assignment-react.herokuapp.com/getUrl/${user}`).then(res=>res.json()).then(data=>{setData(data)})
     },[data.shortURL])
     
    

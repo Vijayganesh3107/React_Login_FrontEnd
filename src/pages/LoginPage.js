@@ -26,7 +26,7 @@ export default function LoginPage() {
             email,
             password
         }
-        var res=await fetch("http://localhost:5000/user/login",{
+        var res=await fetch("https://login-assignment-react.herokuapp.com/user/login",{
             method:"POST",
             body:JSON.stringify(bodydata),
             headers:{

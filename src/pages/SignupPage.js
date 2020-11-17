@@ -43,7 +43,7 @@ export default function SignupPage() {
                    password,
                    
                }
-               var res=await fetch("http://localhost:5000/user/signup",{
+               var res=await fetch("https://login-assignment-react.herokuapp.com/user/signup",{
                    method:"POST",
                    body:JSON.stringify(bodydata),
                    headers:{

@@ -13,7 +13,7 @@ export default function ForgetPassword() {
         var bodydata={
             email
         }
-        var res=await fetch("http://localhost:5000/forgetpassword",{
+        var res=await fetch("https://login-assignment-react.herokuapp.com/forgetpassword",{
             method:"POST",
             body:JSON.stringify(bodydata),
             headers:{
