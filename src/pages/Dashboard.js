@@ -51,7 +51,7 @@ const [message,setMessage]=useState('');
         <div className="container">
           <Row>
             <Col xl={8}>
-              <h1 className="text-right">DashBoard!!!</h1>
+              <h1 className="text-center">DashBoard!!!</h1>
             </Col>
             <Col className="text-right" xl={4}>
             <Button color="" id="toggler" style={{ marginBottom: '1rem',borderRadius:'50%' }}>

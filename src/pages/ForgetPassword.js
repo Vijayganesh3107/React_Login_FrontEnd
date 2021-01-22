@@ -31,7 +31,7 @@ export default function ForgetPassword() {
     return (
         <>
          <Alert color="success" isOpen={alertopen}>Reset Password link Has been sent to Registered mail ID</Alert>
-        <h1 className="App">Forget Password</h1>
+        <h1 className="App">Forgot Password</h1>
         <div className="card mt-5 ">
             <div className="card-body displaycard">
             <Label for="email">Email:</Label>

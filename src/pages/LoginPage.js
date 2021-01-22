@@ -59,7 +59,7 @@ export default function LoginPage() {
             <Input type="text" value={email} onChange={handleEmailChange} id="name" />
             <Label for="password" >Password</Label>
             <Input type="password" value={password} onChange={handlePasswordChange} id="email" />
-            <Link to={routes.forgetpassword} style={style}>Forget password?</Link>
+            <Link to={routes.forgetpassword} style={style}>Forgot password?</Link>
            </div>
           
       
